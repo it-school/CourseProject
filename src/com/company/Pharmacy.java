@@ -1,5 +1,9 @@
 package com.company;
 
+/** Class that describes the drug
+ *
+ */
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
