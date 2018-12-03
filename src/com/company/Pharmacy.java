@@ -14,9 +14,7 @@ public class Pharmacy {
     private int inPackage;
     private int pharmacyNumber;
     private int shelfLife;
-    private String date;
-
-    private Date dateOfDelivery = new Date(date);
+    private Date dateOfDelivery;
 
     public Pharmacy(String drugName, String company, double unitPrice, int inPackage, int pharmacyNumber, int shelfLife, String date) {
         this.drugName = drugName;
@@ -25,7 +23,7 @@ public class Pharmacy {
         setInPackage(inPackage);
         setPharmacyNumber(pharmacyNumber);
         setShelfLife(shelfLife);
-        this.date = date;
+        setDate(date);
     }
 
     @Override
@@ -94,6 +92,6 @@ public class Pharmacy {
     }
 
     public void setDate(String date) {
-        this.date = date;
+        this.dateOfDelivery = new Date(date);
     }
 }
